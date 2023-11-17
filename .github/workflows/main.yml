@@ -13,11 +13,12 @@ jobs:
 
 
     steps:
-      - name: 'Printing folder contents'
-        run: ls
-
-
       - uses: actions/checkout@v3
+
+
+      - name: "Login to Docker hub"
+        run: docker login --username nayora --password dckr_pat_71OKhQyjqBizd6BB0KaGvHVwlMw
+
       
 
      
